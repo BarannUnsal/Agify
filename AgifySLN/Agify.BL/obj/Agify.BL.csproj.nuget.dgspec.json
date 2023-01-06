@@ -1,0 +1,216 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.BL\\Agify.BL.csproj": {}
+  },
+  "projects": {
+    "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.BL\\Agify.BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.BL\\Agify.BL.csproj",
+        "projectName": "Agify.BL",
+        "projectPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.BL\\Agify.BL.csproj",
+        "packagesPath": "C:\\Users\\SIA-OF1\\.nuget\\packages\\",
+        "outputPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.BL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SIA-OF1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://packagesource": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj": {
+                "projectPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj",
+        "projectName": "Agify.DAL",
+        "projectPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj",
+        "packagesPath": "C:\\Users\\SIA-OF1\\.nuget\\packages\\",
+        "outputPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SIA-OF1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://packagesource": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj": {
+                "projectPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj",
+        "projectName": "Agify.Domain",
+        "projectPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj",
+        "packagesPath": "C:\\Users\\SIA-OF1\\.nuget\\packages\\",
+        "outputPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SIA-OF1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://packagesource": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\bin\Debug\net6.0\Agify.DAL.deps.json
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\bin\Debug\net6.0\Agify.DAL.runtimeconfig.json
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\bin\Debug\net6.0\Agify.DAL.dll
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\bin\Debug\net6.0\Agify.DAL.pdb
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\bin\Debug\net6.0\Agify.Domain.dll
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\bin\Debug\net6.0\Agify.Domain.pdb
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\obj\Debug\net6.0\Agify.DAL.csproj.AssemblyReference.cache
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\obj\Debug\net6.0\Agify.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\obj\Debug\net6.0\Agify.DAL.AssemblyInfoInputs.cache
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\obj\Debug\net6.0\Agify.DAL.AssemblyInfo.cs
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\obj\Debug\net6.0\Agify.DAL.csproj.CoreCompileInputs.cache
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\obj\Debug\net6.0\Agify.DAL.csproj.CopyComplete
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\obj\Debug\net6.0\Agify.DAL.dll
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\obj\Debug\net6.0\refint\Agify.DAL.dll
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\obj\Debug\net6.0\Agify.DAL.pdb
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\obj\Debug\net6.0\Agify.DAL.genruntimeconfig.cache
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\obj\Debug\net6.0\ref\Agify.DAL.dll

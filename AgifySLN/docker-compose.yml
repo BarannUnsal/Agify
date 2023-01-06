@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  agify.api:
+    image: ${DOCKER_REGISTRY-}agifyapi
+    build:
+      context: .
+      dockerfile: Agify.API/Dockerfile

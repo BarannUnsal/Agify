@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+    agify.api:
+        build:
+          context: .
+        ports:
+          - "5000"
+          - "5001"
+        depends_on:
+          - sqldb
+
+    sqldb:
+        image: "mcr.microsoft.com/mssql/server:2022-latest"
+        ports:
+          - "1440:1433"
+
+        environment:
+            SA_PASSWORD: "guclusifreguclubeyin"
+            ACCEPT_EULA: "Y"
