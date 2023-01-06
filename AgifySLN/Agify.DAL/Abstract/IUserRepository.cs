@@ -4,6 +4,6 @@ namespace Agify.DAL.Abstract
 {
     public interface IUserRepository
     {
-        Task<IEnumerable<User?>> Get(string[] name);
+        Task<IEnumerable<User?>> GetAsync(string[]? name);
     }
 }

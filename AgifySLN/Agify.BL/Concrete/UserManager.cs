@@ -13,9 +13,9 @@ namespace Agify.BL.Concrete
             _userRepository = userRepository;
         }
 
-        public Task<IEnumerable<User>> Get(string[] name)
+        public Task<IEnumerable<User>> GetAsync(string[] name)
         {
-            return _userRepository.Get(name);
+            return _userRepository.GetAsync(name);
         }
     }
 }

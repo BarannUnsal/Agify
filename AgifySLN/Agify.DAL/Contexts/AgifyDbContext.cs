@@ -27,7 +27,7 @@ namespace Agify.DAL.Contexts
             modelBuilder.HasSequence("FE_Sequence");
 
             modelBuilder.Entity<User>()
-                .Property(p => p.Id)
+                .Property(u => u.Name)
                 .HasDefaultValueSql("NEXT VALUE FOR FE_Sequence");
 
             modelBuilder.Entity<User>()

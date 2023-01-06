@@ -1,17 +1,16 @@
 ﻿using Agify.Domain.Enums;
-using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Agify.Domain.Entities
 {
     public class User
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int Id { get; set; }
-        public string Age { get; set; }
-        public string Name { get; set; }
-        public string Count { get; set; }
+        [Key]
+        public string? Age { get; set; }
+        public string? Name { get; set; }
+        public string? Count { get; set; }
 
-        public string StageOfLife
+        public string? StageOfLife
         {
             get
             {
@@ -35,9 +34,13 @@ namespace Agify.Domain.Entities
                 {
                     return ((StageOfLife)5).ToString();
                 }
-                else
+                else if (int.Parse(Age) >= 70)
                 {
                     return ((StageOfLife)6).ToString();
+                }
+                else
+                {
+                    return "";
                 }
             }
             set { }

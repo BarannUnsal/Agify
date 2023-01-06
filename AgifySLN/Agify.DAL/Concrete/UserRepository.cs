@@ -2,6 +2,8 @@
 using Agify.DAL.Contexts;
 using Agify.Domain.Entities;
 using Newtonsoft.Json;
+using System.Net.Http.Headers;
+using System.Net.Http.Json;
 
 namespace Agify.DAL.Concrete
 {
@@ -14,25 +16,54 @@ namespace Agify.DAL.Concrete
             _context = context;
         }
 
-        private string key = "b349603a39mshb3066b2704534e8p11bbb6jsn7003bdfaaaf5";
-
-        public async Task<IEnumerable<User>?> Get(string[] name)
+        public async Task<IEnumerable<User>?> GetAsync(string[] name)
         {
-            string.Join(" ", name);
-            string lowerName = "";
-            for (int i = 0; i < name.Count(); i++)
+            try
             {
-                lowerName = name[i].ToLower();
-            }
-            using (var httpClient = new HttpClient())
-            {
-                using (var response = await httpClient.GetAsync($"https://api.agify.io/?name[]={lowerName}"))
+                string.Join(" ", name);
+                string lowerName = "";
+                string url = "https://api.agify.io/";
+                string[] nameArr = new string[name.Length];
+                for (int i = 0; i < name.Count(); i++)
                 {
-                    string apiResponse = await response.Content.ReadAsStringAsync();
-                    var user = JsonConvert.DeserializeObject<List<User>>(apiResponse).ToList();
-                    return user;
+                    lowerName = name[i].ToLower();
                 }
+                if (name.Count() == 1)
+                {
+                    using (var httpClient = new HttpClient())
+                    {
+                        httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        using (var response = await httpClient.GetAsync($"{url}?name[]={lowerName}"))
+                        {
+                            string apiResponse = await response.Content.ReadAsStringAsync();
+                            List<User> user = JsonConvert.DeserializeObject<List<User>>(apiResponse);
+                            return user;
+                        }
+                    }
+                }
+                else if (name.Count() > 1)
+                {
+                    ICollection<User> users = null;
+                    var httpClient = new HttpClient();
+                    httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    for (int i = 0; i < name.Count(); i++)
+                    {
+                        foreach (var item in name)
+                        {
+                            var response = await httpClient.GetAsync($"{url}?name[[]]={item.ToLower()}");
+                            var apiResponse = await response.Content.ReadAsStringAsync();
+                            users = JsonConvert.DeserializeObject<List<User>>(apiResponse);
+                            return users;
+                        }
+                    }
+                }
+                return null;
+
             }
+            catch (Exception)
+            {
+                throw;
+            }            
         }
     }
 }
