@@ -1,5 +1,4 @@
 using Agify.BL.Abstract;
-using Agify.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Agify.API.Controllers
@@ -21,21 +20,28 @@ namespace Agify.API.Controllers
         [HttpGet(Name = "?name")]
         public async Task<JsonResult> Name([FromQuery] string[]? name)
         {
-            if (name != null)
+            try
             {
-                var users = await _userService.GetAsync(name);
-                if (users != null)
+                if (name != null)
                 {
-                    _logger.LogInformation("Query successfuly");
-                    return new JsonResult(users);
+                    var users = await _userService.GetAsync(name);
+                    if (users != null)
+                    {
+                        _logger.LogInformation("Query successfuly");
+                        return new JsonResult(users);
+                    }
+                    else
+                    {
+                        _logger.LogError("Query not found!!!");
+                        return new JsonResult("error: Missing 'name' parameter");
+                    }
                 }
-                else
-                {
-                    _logger.LogError("Query not found!!!");
-                    return new JsonResult("error: Missing 'name' parameter");
-                }
+                return new JsonResult("error: Missing 'name' parameter");
             }
-            return new JsonResult("error: Missing 'name' parameter");
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
     }
