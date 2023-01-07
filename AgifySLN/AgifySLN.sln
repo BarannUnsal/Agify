@@ -5,13 +5,15 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agify.API", "Agify.API\Agify.API.csproj", "{D63F3D91-D2DF-4269-BC19-1507C2DF7C15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agify.Domain", "Agify.Domain\Agify.Domain.csproj", "{B3041471-AC63-4B31-95C8-AF24BE208A65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agify.Domain", "Agify.Domain\Agify.Domain.csproj", "{B3041471-AC63-4B31-95C8-AF24BE208A65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agify.DAL", "Agify.DAL\Agify.DAL.csproj", "{F4BB912A-8C4F-49A8-97A2-365874E8185C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agify.DAL", "Agify.DAL\Agify.DAL.csproj", "{F4BB912A-8C4F-49A8-97A2-365874E8185C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agify.BL", "Agify.BL\Agify.BL.csproj", "{A3D701BA-22A5-4593-A5B4-CF76DB654D44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agify.BL", "Agify.BL\Agify.BL.csproj", "{A3D701BA-22A5-4593-A5B4-CF76DB654D44}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{48662452-941B-434F-A529-9638350394DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agify.UnitTests", "Agify.UnitTests\Agify.UnitTests.csproj", "{8A1AFFF6-CD47-4704-B156-AAD571F3DDFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{48662452-941B-434F-A529-9638350394DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48662452-941B-434F-A529-9638350394DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48662452-941B-434F-A529-9638350394DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A1AFFF6-CD47-4704-B156-AAD571F3DDFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A1AFFF6-CD47-4704-B156-AAD571F3DDFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A1AFFF6-CD47-4704-B156-AAD571F3DDFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A1AFFF6-CD47-4704-B156-AAD571F3DDFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

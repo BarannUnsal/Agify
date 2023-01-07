@@ -57,7 +57,7 @@ namespace Agify.API.Controllers
                 }
                 return new JsonResult("Missing 'name' or 'name[]' parameter");
             }
-            catch (Exception ex)
+            catch (ArgumentException ex)
             {
                 _logger.LogError(ex, "Error");
                 return new JsonResult("error: Error request");
