@@ -3,7 +3,6 @@ using Agify.DAL.Contexts;
 using Agify.Domain.Entities;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
-using System.Net.Http.Json;
 
 namespace Agify.DAL.Concrete
 {
@@ -23,12 +22,11 @@ namespace Agify.DAL.Concrete
                 string.Join(" ", name);
                 string lowerName = "";
                 string url = "https://api.agify.io/";
-                string[] nameArr = new string[name.Length];
                 for (int i = 0; i < name.Count(); i++)
                 {
                     lowerName = name[i].ToLower();
                 }
-                if (name.Count() == 1)
+                if (name.Count() > 0)
                 {
                     using (var httpClient = new HttpClient())
                     {
@@ -38,22 +36,6 @@ namespace Agify.DAL.Concrete
                             string apiResponse = await response.Content.ReadAsStringAsync();
                             List<User> user = JsonConvert.DeserializeObject<List<User>>(apiResponse);
                             return user;
-                        }
-                    }
-                }
-                else if (name.Count() > 1)
-                {
-                    ICollection<User> users = null;
-                    var httpClient = new HttpClient();
-                    httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    for (int i = 0; i < name.Count(); i++)
-                    {
-                        foreach (var item in name)
-                        {
-                            var response = await httpClient.GetAsync($"{url}?name[[]]={item.ToLower()}");
-                            var apiResponse = await response.Content.ReadAsStringAsync();
-                            users = JsonConvert.DeserializeObject<List<User>>(apiResponse);
-                            return users;
                         }
                     }
                 }
