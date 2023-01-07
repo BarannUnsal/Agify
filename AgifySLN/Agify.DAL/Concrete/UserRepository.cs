@@ -1,5 +1,4 @@
 ﻿using Agify.DAL.Abstract;
-using Agify.DAL.Contexts;
 using Agify.Domain.Entities;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
@@ -8,13 +7,6 @@ namespace Agify.DAL.Concrete
 {
     public class UserRepository : IUserRepository
     {
-        private readonly AgifyDbContext _context;
-
-        public UserRepository(AgifyDbContext context)
-        {
-            _context = context;
-        }
-
         public async Task<IEnumerable<User>?> GetAsync(string[] name)
         {
             try
