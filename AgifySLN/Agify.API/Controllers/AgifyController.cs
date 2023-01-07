@@ -17,9 +17,14 @@ namespace Agify.API.Controllers
             _userService = userService;
         }
 
-        [HttpGet(Name = "?name")]
-        public async Task<JsonResult> Name([FromQuery] string[]? name)
+        [HttpGet(Name = "{name?}{names?}")]
+        public async Task<JsonResult> Name([FromQuery] string[]? names, [FromQuery] string? name)
         {
+            if (names == null && name == null)
+            {
+                return new JsonResult("error: Missing 'name[]' parameter");
+            }
+
             try
             {
                 if (name != null)
@@ -33,16 +38,30 @@ namespace Agify.API.Controllers
                     else
                     {
                         _logger.LogError("Query not found!!!");
-                        return new JsonResult("error: Missing 'name' parameter");
+                        return new JsonResult("error: User not found");
                     }
                 }
-                return new JsonResult("error: Missing 'name' parameter");
+                else if (names != null)
+                {
+                    var users = await _userService.GetArrayAsync(names);
+                    if (users != null)
+                    {
+                        _logger.LogInformation("Query successfuly");
+                        return new JsonResult(users);
+                    }
+                    else
+                    {
+                        _logger.LogError("Query not found!!!");
+                        return new JsonResult("error: Users not found");
+                    }
+                }
+                return new JsonResult("Missing 'name' or 'name[]' parameter");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                _logger.LogError(ex, "Error");
+                return new JsonResult("error: Error request");
             }
         }
-
     }
 }

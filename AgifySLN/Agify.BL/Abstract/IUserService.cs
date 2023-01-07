@@ -4,6 +4,7 @@ namespace Agify.BL.Abstract
 {
     public interface IUserService
     {
-        Task<IEnumerable<User>> GetAsync(string[] name);
+        Task<User> GetAsync(string name);
+        Task<User[]> GetArrayAsync(string[] names);
     }
 }

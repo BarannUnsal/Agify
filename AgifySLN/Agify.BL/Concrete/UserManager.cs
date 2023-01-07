@@ -13,7 +13,12 @@ namespace Agify.BL.Concrete
             _userRepository = userRepository;
         }
 
-        public Task<IEnumerable<User>> GetAsync(string[] name)
+        public Task<User[]> GetArrayAsync(string[] names)
+        {
+           return _userRepository.GetArrayAsync(names);           
+        }
+
+        public Task<User> GetAsync(string name)
         {
             return _userRepository.GetAsync(name);
         }
