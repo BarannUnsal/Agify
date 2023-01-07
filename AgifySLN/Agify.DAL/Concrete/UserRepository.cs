@@ -19,28 +19,32 @@ namespace Agify.DAL.Concrete
         {
             try
             {
-                string.Join(" ", name);
-                string lowerName = "";
-                string url = "https://api.agify.io/";
-                for (int i = 0; i < name.Count(); i++)
+                if (name != null)
                 {
-                    lowerName = name[i].ToLower();
-                }
-                if (name.Count() > 0)
-                {
-                    using (var httpClient = new HttpClient())
+                    string.Join(" ", name);
+                    string lowerName = "";
+                    string url = "https://api.agify.io/";
+                    for (int i = 0; i < name.Count(); i++)
                     {
-                        httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                        using (var response = await httpClient.GetAsync($"{url}?name[]={lowerName}"))
+                        lowerName = name[i].ToLower();
+                    }
+                    if (name.Count() > 0)
+                    {
+                        using (var httpClient = new HttpClient())
                         {
-                            string apiResponse = await response.Content.ReadAsStringAsync();
-                            List<User> user = JsonConvert.DeserializeObject<List<User>>(apiResponse);
-                            return user;
+                            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                            using (var response = await httpClient.GetAsync($"{url}?name[]={lowerName}"))
+                            {
+                                string apiResponse = await response.Content.ReadAsStringAsync();
+                                List<User> user = JsonConvert.DeserializeObject<List<User>>(apiResponse);
+                                return user;
+                            }
                         }
                     }
+                    return null;
                 }
-                return null;
-
+                else
+                    return null;
             }
             catch (Exception)
             {
