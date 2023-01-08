@@ -1,6 +1,7 @@
 ﻿using Agify.DAL.Abstract;
 using Agify.Domain.Entities;
 using Newtonsoft.Json;
+using StackExchange.Redis;
 using System.Net.Http.Headers;
 
 namespace Agify.DAL.Concrete
@@ -20,12 +21,29 @@ namespace Agify.DAL.Concrete
                 using (var httpClient = new HttpClient())
                 {
                     httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    using (var response = await httpClient.GetAsync($"{url}name={name.ToLower()}"))
+
+                    var redis = ConnectionMultiplexer.Connect("redis");
+                    var db = redis.GetDatabase();
+                    var cacheKey = $"user:{name.ToLower()}";
+                    var cachedValue = db.StringGet(cacheKey);
+
+
+                    User user;
+                    if (cachedValue.HasValue)
                     {
-                        string apiResponse = await response.Content.ReadAsStringAsync();
-                        User user = JsonConvert.DeserializeObject<User>(apiResponse);
-                        return user;
+                        user = JsonConvert.DeserializeObject<User>(cachedValue);
                     }
+                    else
+                    {
+                        using (var response = await httpClient.GetAsync($"{url}name={name.ToLower()}"))
+                        {
+                            string apiResponse = await response.Content.ReadAsStringAsync();
+                            user = JsonConvert.DeserializeObject<User>(apiResponse);
+                            db.StringSet(cacheKey, apiResponse);
+                            return user;
+                        }
+                    }
+                    return user;
                 }
             }
             catch (Exception)
@@ -55,12 +73,27 @@ namespace Agify.DAL.Concrete
 
                     httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                     var requestUrl = $"{url}{mark}";
-                    using (var response = await httpClient.GetAsync(requestUrl))
+                    var cacheKey = $"users:{requestUrl}";
+                    var redis = ConnectionMultiplexer.Connect("redis");
+                    var db = redis.GetDatabase();
+                    var cachedValue = db.StringGet(cacheKey);
+
+                    User[] users;
+                    if (cachedValue.HasValue)
                     {
-                        string apiResponse = await response.Content.ReadAsStringAsync();
-                        var users = JsonConvert.DeserializeObject<User[]>(apiResponse);
-                        return users;
+                        // If the data is cached, deserialize it and return it
+                        users = JsonConvert.DeserializeObject<User[]>(cachedValue);
                     }
+                    else
+                    {
+                        using (var response = await httpClient.GetAsync(requestUrl))
+                        {
+                            string apiResponse = await response.Content.ReadAsStringAsync();
+                            users = JsonConvert.DeserializeObject<User[]>(apiResponse);
+                            db.StringSet(cacheKey, apiResponse);
+                        }
+                    }
+                    return users;
                 }
             }
             catch (JsonSerializationException)

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+RDfmdQFcPQSe2VzioOOuOWs/yLQXQe1I5AQR7QiMZyS5iuZlwxa2UqdeQ8Htulg5vF5dbSlos0hSpe5zysHoQ==",
+  "dgSpecHash": "P1K+ycfMFlIo0BuhdefcouF54/QhX+8Fk6sJ8Ng3E74NpDdntEgsClX86D0eNduCAmdn5p3kuuxTtjeDWFLr6A==",
   "success": true,
   "projectFilePath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.UnitTests\\Agify.UnitTests.csproj",
   "expectedPackageFiles": [
@@ -41,11 +41,14 @@
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\nunit.analyzers\\3.3.0\\nunit.analyzers.3.3.0.nupkg.sha512",
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\nunit3testadapter\\4.2.1\\nunit3testadapter.4.2.1.nupkg.sha512",
+    "C:\\Users\\SIA-OF1\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.2\\pipelines.sockets.unofficial.2.2.2.nupkg.sha512",
+    "C:\\Users\\SIA-OF1\\.nuget\\packages\\stackexchange.redis\\2.6.86\\stackexchange.redis.2.6.86.nupkg.sha512",
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
+    "C:\\Users\\SIA-OF1\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\system.runtime.caching\\4.7.0\\system.runtime.caching.4.7.0.nupkg.sha512",
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",

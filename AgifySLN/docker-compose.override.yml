@@ -16,6 +16,7 @@ services:
            - "5001:443"     
         depends_on:
            - sqldb 
+           - redis
 
     sqldb:
         image: "mcr.microsoft.com/mssql/server:2022-latest"
@@ -24,3 +25,8 @@ services:
         environment:
            SA_PASSWORD: "guclusifreguclubeyin"
            ACCEPT_EULA: "Y"
+
+    redis:
+        image: redis:latest
+        ports:
+            - 6379:6379
