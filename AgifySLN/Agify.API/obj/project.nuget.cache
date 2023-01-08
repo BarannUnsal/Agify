@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HLXQAMmrzmjUmC1FHbRwr061acmq9MlZ1OXKOJ2XmESY7JlqdqBUJDjKIpUMBpleax26xl4JqQqgr25UQX4HDg==",
+  "dgSpecHash": "OA6uJsnt8W8cKWjf2dUni6QOiaEvqIFWyukJIFt2f5Vi9ZRPGgrrKMLxGj1c4SeWXSfg6nY1f/QSWoqpMCkhJg==",
   "success": true,
-  "projectFilePath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.API\\Agify.API.csproj",
+  "projectFilePath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\agify.api\\Agify.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\6.0.12\\microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.12.nupkg.sha512",
