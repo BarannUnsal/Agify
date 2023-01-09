@@ -15,3 +15,20 @@ D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\obj\Release\net6.0\refint\Ag
 D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\obj\Release\net6.0\Agify.DAL.pdb
 D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\obj\Release\net6.0\Agify.DAL.genruntimeconfig.cache
 D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.DAL\obj\Release\net6.0\ref\Agify.DAL.dll
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.DAL\bin\Release\net6.0\Agify.DAL.deps.json
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.DAL\bin\Release\net6.0\Agify.DAL.runtimeconfig.json
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.DAL\bin\Release\net6.0\Agify.DAL.dll
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.DAL\bin\Release\net6.0\Agify.DAL.pdb
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.DAL\bin\Release\net6.0\Agify.Domain.dll
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.DAL\bin\Release\net6.0\Agify.Domain.pdb
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.DAL\obj\Release\net6.0\Agify.DAL.csproj.AssemblyReference.cache
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.DAL\obj\Release\net6.0\Agify.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.DAL\obj\Release\net6.0\Agify.DAL.AssemblyInfoInputs.cache
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.DAL\obj\Release\net6.0\Agify.DAL.AssemblyInfo.cs
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.DAL\obj\Release\net6.0\Agify.DAL.csproj.CoreCompileInputs.cache
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.DAL\obj\Release\net6.0\Agify.DAL.csproj.CopyComplete
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.DAL\obj\Release\net6.0\Agify.DAL.dll
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.DAL\obj\Release\net6.0\refint\Agify.DAL.dll
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.DAL\obj\Release\net6.0\Agify.DAL.pdb
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.DAL\obj\Release\net6.0\Agify.DAL.genruntimeconfig.cache
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.DAL\obj\Release\net6.0\ref\Agify.DAL.dll

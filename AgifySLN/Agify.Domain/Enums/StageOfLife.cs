@@ -5,21 +5,21 @@ namespace Agify.Domain.Enums
     public enum StageOfLife
     {
         [Display(Name = "Early Childhood")]
-        Early_Child_Hood,
+        Early_Child_Hood = 1,
 
         [Display(Name = "Childhood")]
-        Childhood,
+        Childhood = 2,
 
         [Display(Name = "Adolescence")]
-        Adolescence,
+        Adolescence = 3,
 
         [Display(Name = "Youth")]
-        Youth,
+        Youth = 4,
 
         [Display(Name = "Maturity")]
-        Maturity,
+        Maturity = 5,
 
         [Display(Name = "Old Age")]
-        Old_age
+        Old_age = 6
     }
 }

@@ -229,6 +229,24 @@
           }
         }
       },
+      "Microsoft.Extensions.Caching.StackExchangeRedis/6.0.13": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0",
+          "StackExchange.Redis": "2.2.4"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -1172,6 +1190,25 @@
         "microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
         "microsoft.extensions.caching.memory.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Caching.StackExchangeRedis/6.0.13": {
+      "sha512": "ArVEmOaNa9dUcS2x5NPNaPP2PTYxjso/+ktxItIagJSPoJCHnxA/STtCY/AJ+ka79PphaCdQXSxrMR1vbSGayA==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.stackexchangeredis/6.0.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Caching.StackExchangeRedis.dll",
+        "lib/net461/Microsoft.Extensions.Caching.StackExchangeRedis.xml",
+        "lib/net6.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll",
+        "lib/net6.0/Microsoft.Extensions.Caching.StackExchangeRedis.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.StackExchangeRedis.xml",
+        "microsoft.extensions.caching.stackexchangeredis.6.0.13.nupkg.sha512",
+        "microsoft.extensions.caching.stackexchangeredis.nuspec"
       ]
     },
     "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
@@ -2185,6 +2222,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.12",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.12",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.12",
+      "Microsoft.Extensions.Caching.StackExchangeRedis >= 6.0.13",
       "Newtonsoft.Json >= 13.0.2",
       "StackExchange.Redis >= 2.6.86"
     ]
@@ -2196,11 +2234,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj",
+      "projectUniqueName": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj",
       "projectName": "Agify.DAL",
-      "projectPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj",
+      "projectPath": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj",
       "packagesPath": "C:\\Users\\SIA-OF1\\.nuget\\packages\\",
-      "outputPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.DAL\\obj\\",
+      "outputPath": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -2220,8 +2258,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj": {
-              "projectPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj"
+            "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj": {
+              "projectPath": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj"
             }
           }
         }
@@ -2255,6 +2293,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.12, )"
+          },
+          "Microsoft.Extensions.Caching.StackExchangeRedis": {
+            "target": "Package",
+            "version": "[6.0.13, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",

@@ -6,5 +6,7 @@ namespace Agify.DAL.Abstract
     {
         Task<User> GetAsync(string name);
         Task<User[]> GetArrayAsync(string[] names);
+        Task<bool> AddUserAsync(User user);
+        Task<bool> AddUserRangeAsync(User[] users);
     }
 }

@@ -15,3 +15,20 @@ D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.d
 D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\refint\Agify.BL.dll
 D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.pdb
 D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\ref\Agify.BL.dll
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\bin\Release\net6.0\Agify.BL.deps.json
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\bin\Release\net6.0\Agify.BL.dll
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\bin\Release\net6.0\Agify.BL.pdb
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\bin\Release\net6.0\Agify.DAL.dll
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\bin\Release\net6.0\Agify.Domain.dll
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\bin\Release\net6.0\Agify.DAL.pdb
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\bin\Release\net6.0\Agify.Domain.pdb
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.csproj.AssemblyReference.cache
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.AssemblyInfoInputs.cache
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.AssemblyInfo.cs
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.csproj.CoreCompileInputs.cache
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.csproj.CopyComplete
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.dll
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\refint\Agify.BL.dll
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.pdb
+D:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\ref\Agify.BL.dll

@@ -4,7 +4,7 @@
 
 namespace Agify.DAL.Migrations
 {
-    public partial class db_create : Migration
+    public partial class id_column_add : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -16,10 +16,10 @@ namespace Agify.DAL.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false, defaultValueSql: "NEXT VALUE FOR FE_Sequence"),
-                    Age = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Avg = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    StageOfLife = table.Column<int>(type: "int", nullable: false)
+                    Age = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Name = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    Count = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    StageOfLife = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -30,7 +30,8 @@ namespace Agify.DAL.Migrations
                 name: "IX_Users_Name",
                 table: "Users",
                 column: "Name",
-                unique: true);
+                unique: true,
+                filter: "[Name] IS NOT NULL");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

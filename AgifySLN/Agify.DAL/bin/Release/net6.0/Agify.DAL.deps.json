@@ -13,6 +13,7 @@
           "Microsoft.EntityFrameworkCore.Design": "6.0.12",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.12",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.12",
+          "Microsoft.Extensions.Caching.StackExchangeRedis": "6.0.13",
           "Newtonsoft.Json": "13.0.2",
           "StackExchange.Redis": "2.6.86"
         },
@@ -177,6 +178,19 @@
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.222.6406"
+          }
+        }
+      },
+      "Microsoft.Extensions.Caching.StackExchangeRedis/6.0.13": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0",
+          "StackExchange.Redis": "2.6.86"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll": {
+            "assemblyVersion": "6.0.13.0",
+            "fileVersion": "6.0.1322.58013"
           }
         }
       },
@@ -628,6 +642,13 @@
       "sha512": "sha512-B4y+Cev05eMcjf1na0v9gza6GUtahXbtY1JCypIgx3B4Ea/KAgsWyXEmW4q6zMbmTMtKzmPVk09rvFJirvMwTg==",
       "path": "microsoft.extensions.caching.memory/6.0.1",
       "hashPath": "microsoft.extensions.caching.memory.6.0.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.StackExchangeRedis/6.0.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ArVEmOaNa9dUcS2x5NPNaPP2PTYxjso/+ktxItIagJSPoJCHnxA/STtCY/AJ+ka79PphaCdQXSxrMR1vbSGayA==",
+      "path": "microsoft.extensions.caching.stackexchangeredis/6.0.13",
+      "hashPath": "microsoft.extensions.caching.stackexchangeredis.6.0.13.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
       "type": "package",

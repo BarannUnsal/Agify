@@ -20,17 +20,17 @@ namespace Agify.DAL.Contexts
                         maxRetryDelay: TimeSpan.FromSeconds(10),
                         errorNumbersToAdd: null
                         );
-                });
+                }); 
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasSequence("FE_Sequence");
 
             modelBuilder.Entity<User>()
-                .Property(u => u.Name)
+                .Property(u => u.Id)
                 .HasDefaultValueSql("NEXT VALUE FOR FE_Sequence");
 
-            modelBuilder.Entity<User>()
+            modelBuilder.Entity<User>() 
                 .HasIndex(u => u.Name)
                 .IsUnique();
         }

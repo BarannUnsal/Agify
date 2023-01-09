@@ -11,6 +11,10 @@ namespace Agify.DAL
         {
             services.AddDbContext<AgifyDbContext>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = "localhost";
+            });
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PAfKUIiDK17NeBvfmRHzh2kTh905j0gW27J0/OzeYe2SN05ygig+wKT+FIliHrt1kb3pN+35vsliagcfIAHOPw==",
+  "dgSpecHash": "CvH+PGI8b8+6XZI1oA2HaXCAviY6XPL8MWtFTp8g5DsIH4P+mA66kthwcsla9/9uXkwfPaK5fZ8y1QueDSLosg==",
   "success": true,
-  "projectFilePath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj",
+  "projectFilePath": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -17,6 +17,7 @@
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.12\\microsoft.entityframeworkcore.tools.6.0.12.nupkg.sha512",
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
+    "C:\\Users\\SIA-OF1\\.nuget\\packages\\microsoft.extensions.caching.stackexchangeredis\\6.0.13\\microsoft.extensions.caching.stackexchangeredis.6.0.13.nupkg.sha512",
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
     "C:\\Users\\SIA-OF1\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",

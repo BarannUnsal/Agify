@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.UnitTests\\Agify.UnitTests.csproj": {}
+    "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.UnitTests\\Agify.UnitTests.csproj": {}
   },
   "projects": {
-    "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj": {
+    "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj",
+        "projectUniqueName": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj",
         "projectName": "Agify.DAL",
-        "projectPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj",
+        "projectPath": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj",
         "packagesPath": "C:\\Users\\SIA-OF1\\.nuget\\packages\\",
-        "outputPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.DAL\\obj\\",
+        "outputPath": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj": {
-                "projectPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj"
+              "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj": {
+                "projectPath": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj"
               }
             }
           }
@@ -67,6 +67,10 @@
               "target": "Package",
               "version": "[6.0.12, )"
             },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.2, )"
@@ -96,14 +100,14 @@
         }
       }
     },
-    "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj": {
+    "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj",
+        "projectUniqueName": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj",
         "projectName": "Agify.Domain",
-        "projectPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj",
+        "projectPath": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj",
         "packagesPath": "C:\\Users\\SIA-OF1\\.nuget\\packages\\",
-        "outputPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.Domain\\obj\\",
+        "outputPath": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -154,14 +158,14 @@
         }
       }
     },
-    "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.UnitTests\\Agify.UnitTests.csproj": {
+    "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.UnitTests\\Agify.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.UnitTests\\Agify.UnitTests.csproj",
+        "projectUniqueName": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.UnitTests\\Agify.UnitTests.csproj",
         "projectName": "Agify.UnitTests",
-        "projectPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.UnitTests\\Agify.UnitTests.csproj",
+        "projectPath": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.UnitTests\\Agify.UnitTests.csproj",
         "packagesPath": "C:\\Users\\SIA-OF1\\.nuget\\packages\\",
-        "outputPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.UnitTests\\obj\\",
+        "outputPath": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -181,8 +185,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj": {
-                "projectPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj"
+              "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj": {
+                "projectPath": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.DAL\\Agify.DAL.csproj"
               }
             }
           }

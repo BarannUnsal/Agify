@@ -1,16 +1,20 @@
 ﻿using Agify.DAL.Abstract;
 using Agify.DAL.Concrete;
+using Agify.DAL.Contexts;
+using Microsoft.Extensions.Caching.Distributed;
 
 namespace Agify.UnitTests.Application.UserOperations.Queries
 {
     public class UserQueriesTest
     {
         private UserRepository _userRepository;
+        private AgifyDbContext _context;
+        private IDistributedCache _cache;
 
         [OneTimeSetUp]
         public void OneTimeSetUp()
         {
-             _userRepository = new UserRepository();
+             _userRepository = new UserRepository(_context, _cache);
         }
 
         [Test]
@@ -28,7 +32,7 @@ namespace Agify.UnitTests.Application.UserOperations.Queries
             for (int i = 0; i < result.Length; i++)
             {
                 Assert.That(result[i].Name, Is.EqualTo(names[i]));
-                Assert.That(int.Parse(result[i].Age), Is.EqualTo(expectedAges[i]));
+                Assert.That(result[i].Age, Is.EqualTo(expectedAges[i]));
             }
         }
 
@@ -59,7 +63,7 @@ namespace Agify.UnitTests.Application.UserOperations.Queries
             //assert
             Assert.IsNotNull(result);
             Assert.That(result.Name, Is.EqualTo(name));
-            Assert.That(int.Parse(result.Age), Is.EqualTo(expectedAge));
+            Assert.That(result.Age, Is.EqualTo(expectedAge));
         }
     }
 }

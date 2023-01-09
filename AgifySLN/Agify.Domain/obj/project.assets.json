@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj",
+      "projectUniqueName": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj",
       "projectName": "Agify.Domain",
-      "projectPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj",
+      "projectPath": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.Domain\\Agify.Domain.csproj",
       "packagesPath": "C:\\Users\\SIA-OF1\\.nuget\\packages\\",
-      "outputPath": "D:\\USERDATA\\Desktop\\PakodemyCase\\AgifySLN\\Agify.Domain\\obj\\",
+      "outputPath": "D:\\Yazılım Çalışmaları\\C#\\PakodemyCase\\AgifySLN\\Agify.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

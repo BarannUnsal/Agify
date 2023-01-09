@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Agify.DAL.Migrations
 {
     [DbContext(typeof(AgifyDbContext))]
-    [Migration("20230106104819_user_id")]
-    partial class user_id
+    [Migration("20230112183000_id_column_add")]
+    partial class id_column_add
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,27 +27,28 @@ namespace Agify.DAL.Migrations
 
             modelBuilder.Entity("Agify.Domain.Entities.User", b =>
                 {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValueSql("NEXT VALUE FOR FE_Sequence");
+
                     b.Property<string>("Age")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Count")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("nvarchar(450)")
-                        .HasDefaultValueSql("NEXT VALUE FOR FE_Sequence");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("StageOfLife")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Age");
+                    b.HasKey("Id");
 
                     b.HasIndex("Name")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[Name] IS NOT NULL");
 
                     b.ToTable("Users");
                 });
