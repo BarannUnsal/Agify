@@ -12,7 +12,7 @@ namespace Agify.DAL.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost,1450;Database=AgifyDb;Persist Security Info=True;User ID=SA;Password=guclusifreguclubeyin;MultipleActiveResultSets=true",
+            optionsBuilder.UseSqlServer("Server=localhost,1450;Database=AgifyDb;Persist Security Info=True;User ID=SA;Password=A!STR0NGPA55W0rd!;MultipleActiveResultSets=true",
                 sqlServerOptionsAction: sqlOptions =>
                 {
                     sqlOptions.EnableRetryOnFailure(

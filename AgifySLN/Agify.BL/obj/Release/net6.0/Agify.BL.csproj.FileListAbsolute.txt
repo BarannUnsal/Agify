@@ -1,0 +1,17 @@
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\bin\Release\net6.0\Agify.BL.deps.json
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\bin\Release\net6.0\Agify.BL.dll
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\bin\Release\net6.0\Agify.BL.pdb
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\bin\Release\net6.0\Agify.DAL.dll
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\bin\Release\net6.0\Agify.Domain.dll
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\bin\Release\net6.0\Agify.DAL.pdb
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\bin\Release\net6.0\Agify.Domain.pdb
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.csproj.AssemblyReference.cache
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.AssemblyInfoInputs.cache
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.AssemblyInfo.cs
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.csproj.CoreCompileInputs.cache
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.csproj.CopyComplete
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.dll
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\refint\Agify.BL.dll
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\Agify.BL.pdb
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\obj\Release\net6.0\ref\Agify.BL.dll

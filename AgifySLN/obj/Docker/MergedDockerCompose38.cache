@@ -1,0 +1,59 @@
+name: dockercompose5962187232305297833
+services:
+  agify.api:
+    build:
+      context: D:\USERDATA\Desktop\PakodemyCase\AgifySLN
+      dockerfile: Agify.API/Dockerfile
+    depends_on:
+      redis:
+        condition: service_started
+      sqldb:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_Kestrel__Certificates__Default__Password: pa55w0rd!
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /https/Agify.API.pfx
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: agifyapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "5000"
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      published: "5001"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\SIA-OF1\.aspnet\https
+      target: /https
+      read_only: true
+      bind:
+        create_host_path: true
+  redis:
+    image: redis:latest
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 6379
+      published: "6379"
+      protocol: tcp
+  sqldb:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: guclusifreguclubeyin
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 1433
+      published: "1450"
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose5962187232305297833_default

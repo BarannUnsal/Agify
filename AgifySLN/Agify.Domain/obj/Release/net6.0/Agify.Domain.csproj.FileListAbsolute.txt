@@ -1,0 +1,12 @@
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.Domain\bin\Release\net6.0\Agify.Domain.deps.json
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.Domain\bin\Release\net6.0\Agify.Domain.dll
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.Domain\bin\Release\net6.0\Agify.Domain.pdb
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.Domain\obj\Release\net6.0\Agify.Domain.csproj.AssemblyReference.cache
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.Domain\obj\Release\net6.0\Agify.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.Domain\obj\Release\net6.0\Agify.Domain.AssemblyInfoInputs.cache
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.Domain\obj\Release\net6.0\Agify.Domain.AssemblyInfo.cs
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.Domain\obj\Release\net6.0\Agify.Domain.csproj.CoreCompileInputs.cache
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.Domain\obj\Release\net6.0\Agify.Domain.dll
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.Domain\obj\Release\net6.0\refint\Agify.Domain.dll
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.Domain\obj\Release\net6.0\Agify.Domain.pdb
+D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.Domain\obj\Release\net6.0\ref\Agify.Domain.dll
