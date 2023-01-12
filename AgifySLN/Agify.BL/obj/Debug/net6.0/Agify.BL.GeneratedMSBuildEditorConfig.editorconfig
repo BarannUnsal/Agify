@@ -8,7 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Agify.BL
 <<<<<<< HEAD
+<<<<<<< HEAD
 build_property.ProjectDir = d:\Yazılım Çalışmaları\C#\PakodemyCase\AgifySLN\Agify.BL\
 =======
 build_property.ProjectDir = d:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\
 >>>>>>> f027d68 (database password change)
+=======
+build_property.ProjectDir = D:\USERDATA\Desktop\PakodemyCase\AgifySLN\Agify.BL\
+>>>>>>> parent of f027d68 (database password change)

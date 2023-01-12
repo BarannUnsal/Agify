@@ -23,7 +23,7 @@ services:
         ports:
            - "1450:1433"
         environment:
-           SA_PASSWORD: "A!STR0NGPA55W0rd!"
+           SA_PASSWORD: "guclusifreguclubeyin"
            ACCEPT_EULA: "Y"
 
     redis:
