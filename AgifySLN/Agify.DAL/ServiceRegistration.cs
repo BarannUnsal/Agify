@@ -13,7 +13,7 @@ namespace Agify.DAL
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddStackExchangeRedisCache(options =>
             {
-                options.Configuration = "localhost";
+                options.Configuration = "agifysln-redis-1";
             });
         }
     }
