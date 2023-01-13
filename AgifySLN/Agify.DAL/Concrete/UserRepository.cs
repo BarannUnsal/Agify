@@ -25,7 +25,7 @@ namespace Agify.DAL.Concrete
         static string url = "https://api.agify.io?";
 
 
-        public async Task<User> GetAsync(string name)
+        public async Task<object> GetAsync(string name)
         {
             if (name == null)
             {
@@ -52,7 +52,7 @@ namespace Agify.DAL.Concrete
                         newUser.Count += cachedUser.Count;
                         newUser.Age += cachedUser.Age;
                         await _cache.SetAsync(cacheKey, Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(newUser)));
-                        return new User { Age = user.Age, Count = user.Count };
+                        return new AgeAndCount { Age = (int)user.Age, Count = (int)user.Count };
                     }
                     else
                     {
@@ -85,18 +85,15 @@ namespace Agify.DAL.Concrete
                     {
                         var cachedInfo = JsonConvert.DeserializeObject<AgeAndCount>(Encoding.UTF8.GetString(cachedAgeAndCount));
 
-                        // Add the age and count information from the cache to the new object
                         ageAndCount.Age += cachedInfo.Age;
                         ageAndCount.Count += cachedInfo.Count;
                     }
 
-                    // Add the new object to the cache with the updated age and count information
-                    var options = new DistributedCacheEntryOptions().SetAbsoluteExpiration(TimeSpan.FromMinutes(5));
-                    await _cache.SetAsync(cacheKey + "_ageandcount", Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(ageAndCount)), options);
+                    await _cache.SetAsync(cacheKey + "_ageandcount", Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(ageAndCount)));
 
-                    return new User
+                    return new AgeAndCount
                     {
-                        Age = ageAndCount.Age,
+                        Age = (ageAndCount.Count + ageAndCount.Age) / 2,
                         Count = ageAndCount.Count
                     };
                 }
@@ -133,7 +130,19 @@ namespace Agify.DAL.Concrete
                     User[] users;
                     if (cachedValue != null)
                     {
-                        users = JsonConvert.DeserializeObject<User[]>(cachedValue.ToString());
+                       var _users = JsonConvert.DeserializeObject<User[]>(cachedValue.ToString());
+                        foreach (var user in _users)
+                        {
+                            var cachedUser = JsonConvert.DeserializeObject<User>(Encoding.UTF8.GetString(cachedValue));
+                            user.Age = cachedUser.Age;
+                            user.Count = cachedUser.Count;
+                            
+                            var newUser = JsonConvert.DeserializeObject<User>(Encoding.UTF8.GetString(cachedValue));
+                            newUser.Count += cachedUser.Count;
+                            newUser.Age += cachedUser.Age;
+                            await _cache.SetAsync(cacheKey, Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(newUser)));
+                        }
+                        return _users;
                     }
                     else
                     {
