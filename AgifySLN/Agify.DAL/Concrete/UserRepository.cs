@@ -1,4 +1,4 @@
-﻿using Agify.DAL.Abstract;
+using Agify.DAL.Abstract;
 using Agify.DAL.Contexts;
 using Agify.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -49,10 +49,10 @@ namespace Agify.DAL.Concrete
                             Count = cachedUser.Count
                         };
                         var newUser = JsonConvert.DeserializeObject<User>(Encoding.UTF8.GetString(cachedValue));
-                        newUser.Count += cachedUser.Count;
-                        newUser.Age += cachedUser.Age;
                         await _cache.SetAsync(cacheKey, Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(newUser)));
-                        return new AgeAndCount { Age = (int)user.Age, Count = (int)user.Count };
+                        int newAge = int.Parse(user.Age);
+                        int newCount = int.Parse(user.Count);
+                        return new AgeAndCount { Age = newAge.ToString(), Count = newCount.ToString() };
                     }
                     else
                     {
@@ -77,8 +77,8 @@ namespace Agify.DAL.Concrete
                     }
                     var ageAndCount = new AgeAndCount
                     {
-                        Age = (int)user.Age,
-                        Count = (int)user.Count
+                        Age = user.Age.ToString(),
+                        Count = user.Count.ToString()
                     };
                     var cachedAgeAndCount = await _cache.GetAsync(cacheKey + "_ageandcount");
                     if (cachedAgeAndCount != null)
@@ -91,11 +91,9 @@ namespace Agify.DAL.Concrete
 
                     await _cache.SetAsync(cacheKey + "_ageandcount", Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(ageAndCount)));
 
-                    return new AgeAndCount
-                    {
-                        Age = (ageAndCount.Count + ageAndCount.Age) / 2,
-                        Count = ageAndCount.Count
-                    };
+                    int newAge1 = int.Parse(user.Count + user.Age) / 2;
+                    int newCount1 = int.Parse(user.Count);
+                    return new AgeAndCount { Age = newAge1.ToString(), Count = newCount1.ToString() };
                 }
             }
             catch (Exception)
@@ -130,13 +128,13 @@ namespace Agify.DAL.Concrete
                     User[] users;
                     if (cachedValue != null)
                     {
-                       var _users = JsonConvert.DeserializeObject<User[]>(cachedValue.ToString());
+                        var _users = JsonConvert.DeserializeObject<User[]>(cachedValue.ToString());
                         foreach (var user in _users)
                         {
                             var cachedUser = JsonConvert.DeserializeObject<User>(Encoding.UTF8.GetString(cachedValue));
                             user.Age = cachedUser.Age;
                             user.Count = cachedUser.Count;
-                            
+
                             var newUser = JsonConvert.DeserializeObject<User>(Encoding.UTF8.GetString(cachedValue));
                             newUser.Count += cachedUser.Count;
                             newUser.Age += cachedUser.Age;
