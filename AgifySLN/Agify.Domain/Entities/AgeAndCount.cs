@@ -2,7 +2,7 @@
 {
     public class AgeAndCount
     {
-        public int Age { get; set; }
-        public int Count { get; set; }
+        public string Age { get; set; }
+        public string Count { get; set; }
     }
 }
