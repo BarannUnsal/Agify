@@ -74,7 +74,7 @@ namespace Agify.DAL.Concrete
 
                             return user;
                         }
-                    }                   
+                    }
                 }
             }
             catch (Exception)
@@ -109,18 +109,19 @@ namespace Agify.DAL.Concrete
                     User[] users;
                     if (cachedValue != null)
                     {
-                        var _users = JsonConvert.DeserializeObject<User[]>(cachedValue.ToString());
-                        foreach (var user in _users)
+                        var cachedString = Encoding.UTF8.GetString(cachedValue);
+                        var _users = JsonConvert.DeserializeObject<User[]>(cachedString);
+                        for (int i = 0; i < _users.Length; i++)
                         {
-                            var cachedUser = JsonConvert.DeserializeObject<User>(Encoding.UTF8.GetString(cachedValue));
-                            user.Age = cachedUser.Age;
-                            user.Count = cachedUser.Count;
-
-                            var newUser = JsonConvert.DeserializeObject<User>(Encoding.UTF8.GetString(cachedValue));
-                            newUser.Count += cachedUser.Count;
-                            newUser.Age += cachedUser.Age;
-                            await _cache.SetAsync(cacheKey, Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(newUser)));
+                            var cachedUser = JsonConvert.DeserializeObject<User[]>(cachedString);
+                            int newAge = int.Parse(_users[i].Age);
+                            int newCount = int.Parse(_users[i].Count);
+                            newAge += int.Parse(cachedUser[i].Age);
+                            newCount += int.Parse(cachedUser[i].Count);
+                            _users[i].Age = newAge.ToString();
+                            _users[i].Count = newCount.ToString();
                         }
+                        await _cache.SetAsync(cacheKey, Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(_users)));
                         return _users;
                     }
                     else
@@ -128,8 +129,8 @@ namespace Agify.DAL.Concrete
                         using (var response = await httpClient.GetAsync(requestUrl))
                         {
                             string apiResponse = await response.Content.ReadAsStringAsync();
-                            users = JsonConvert.DeserializeObject<User[]>(apiResponse);
-                            foreach (var user in users)
+                            var _users = JsonConvert.DeserializeObject<User[]>(apiResponse);
+                            foreach (var user in _users)
                             {
                                 var dbUsers = await _context.Users.FirstOrDefaultAsync(u => u.Name == user.Name);
                                 if (dbUsers == null)
@@ -143,9 +144,10 @@ namespace Agify.DAL.Concrete
                             }
                             await _context.SaveChangesAsync();
                             await _cache.SetAsync(cacheKey, Encoding.UTF8.GetBytes(apiResponse));
+                            return _users;
                         }
                     }
-                    return users;
+
                 }
             }
             catch (JsonSerializationException)
