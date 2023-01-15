@@ -74,26 +74,7 @@ namespace Agify.DAL.Concrete
 
                             return user;
                         }
-                    }
-                    var ageAndCount = new AgeAndCount
-                    {
-                        Age = user.Age.ToString(),
-                        Count = user.Count.ToString()
-                    };
-                    var cachedAgeAndCount = await _cache.GetAsync(cacheKey + "_ageandcount");
-                    if (cachedAgeAndCount != null)
-                    {
-                        var cachedInfo = JsonConvert.DeserializeObject<AgeAndCount>(Encoding.UTF8.GetString(cachedAgeAndCount));
-
-                        ageAndCount.Age += cachedInfo.Age;
-                        ageAndCount.Count += cachedInfo.Count;
-                    }
-
-                    await _cache.SetAsync(cacheKey + "_ageandcount", Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(ageAndCount)));
-
-                    int newAge1 = int.Parse(user.Count + user.Age) / 2;
-                    int newCount1 = int.Parse(user.Count);
-                    return new AgeAndCount { Age = newAge1.ToString(), Count = newCount1.ToString() };
+                    }                   
                 }
             }
             catch (Exception)
